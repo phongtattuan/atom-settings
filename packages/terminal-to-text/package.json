@@ -1,0 +1,45 @@
+{
+  "name": "terminal-to-text",
+  "main": "./lib/terminal-to-text",
+  "version": "0.1.0",
+  "description": "Converts text copied from the terminal to regular text.",
+  "keywords": [
+    "terminal",
+    "editor"
+  ],
+  "activationCommands": {
+    "atom-workspace": "terminal-to-text:convert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjtorikian/terminal-to-text.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "# terminal-to-text\n\nConverts text copied from the terminal to regular text.\n\n![Converting text](https://cloud.githubusercontent.com/assets/64050/9023383/a1b865c4-384d-11e5-896b-f592d95b2c6e.gif)\n\nRight now this package converts:\n\n* `\\n` into proper line breaks\n* `\\\"` into single quotation marks\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/gjtorikian/terminal-to-text/issues"
+  },
+  "homepage": "https://github.com/gjtorikian/terminal-to-text#readme",
+  "_id": "terminal-to-text@0.1.0",
+  "_shasum": "1cea088aca5ed004c59cfafba39e801e4d3c0426",
+  "_resolved": "file:../d-115113-31817-18spi3k/package.tgz",
+  "_from": "../d-115113-31817-18spi3k/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/terminal-to-text.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

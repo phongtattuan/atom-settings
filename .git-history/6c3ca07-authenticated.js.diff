@@ -1,0 +1,46 @@
+diff --git a/api/policies/authenticated.js b/api/policies/authenticated.js
+index a1425be..d543e77 100644
+--- a/api/policies/authenticated.js
++++ b/api/policies/authenticated.js
+@@ -1,33 +1,33 @@
+ /**
+  * Allow any authenticated user.
+  */
+ 
+ module.exports = function (req, res, next) {
+   sails.log.info('REQUEST: ' + req.route.path +
+                  '\n## HEADER - ' + JSON.stringify(req.headers) +
+                  '\n## BODY - ' + JSON.stringify(req.body));
+ 
+   var token = req.headers['x-auth-token'];
+   if (!token) {
+-    return res.badRequest({code: 5001, error: 'Bad Request'});
++    return res.forbidden(ErrorService.POLICY_AUTH_MISSING_TOKEN);
+   }
+ 
+-  User.findOne({token: token}, function(err, user) {
++  User.findOne({token: token}, function (err, user) {
+     if (err) {
+-      return res.forbidden({code: 5000, error: err});
++      return res.forbidden(ErrorService.SYSTEM(err));
+     }
+ 
+     if (!user) {
+-      return res.forbidden({code: 5002, error: 'You are not permitted to perform this action.'});
++      return res.forbidden(ErrorService.POLICY_AUTH_TOKEN_INVALID);
+     }
+ 
+     var today = new Date();
+-    if (today > user.tokenExpireAt) {
+-      return res.forbidden({code: 5003, error: 'Token expired'});
++    if (today >= user.tokenExpiredAt) {
++      return res.forbidden(ErrorService.POLICY_AUTH_TOKEN_EXPIRED);
+     }
+ 
+     req.user = user;
+ 
+     return next();
+   });
+-};
+\ No newline at end of file
++};

@@ -1,0 +1,5 @@
+en:
+  date:
+    short: {{month}}, {{day}} of year {{year}}
+  view:
+    title: List of things

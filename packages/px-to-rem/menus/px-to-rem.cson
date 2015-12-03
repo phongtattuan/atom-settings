@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Convert px-to-rem'
+      'command': 'px-to-rem:convert'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'px-to-rem'
+      'submenu': [
+        {
+          'label': 'Convert'
+          'command': 'px-to-rem:convert'
+        }
+      ]
+    ]
+  }
+]

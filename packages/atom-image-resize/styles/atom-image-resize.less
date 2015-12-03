@@ -1,0 +1,29 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.atom-image-resize-container {
+  color: @text-color;
+  background-color: @base-border-color;
+  overflow: scroll;
+
+  .atom-image-resize {
+    margin: 15px;
+    padding: 15px;
+    background-color: @base-background-color;
+
+    .canvas-container {
+      text-align: center;
+      canvas {
+        background-color: white;
+      }
+    }
+    .atom-image-resize-settings {
+      display: block;
+    }
+  }
+
+}
+

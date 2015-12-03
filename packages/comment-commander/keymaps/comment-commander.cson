@@ -1,0 +1,6 @@
+'.platform-darwin atom-workspace':
+  'cmd-alt-c': 'comment-commander:format-comment'
+
+'.platform-win32 atom-workspace,
+ .platform-linux atom-workspace':
+  'ctrl-alt-/': 'comment-commander:format-comment'

@@ -1,0 +1,2 @@
+'atom-text-editor':
+  'cmd-C': 'terminal-to-text:convert'

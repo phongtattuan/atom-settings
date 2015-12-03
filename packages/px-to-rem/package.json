@@ -1,0 +1,41 @@
+{
+  "name": "px-to-rem",
+  "main": "./lib/px-to-rem",
+  "version": "0.5.6",
+  "description": "Change px to rem",
+  "activationCommands": {
+    "atom-workspace": "px-to-rem:convert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmendonca/px-to-rem.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0"
+  },
+  "dependencies": {},
+  "readme": "# px-to-rem package\n\nResponsive it is.\n\nJust a simple package that turn your selected pixels text into rem for Atom.io.\n\nSimple as that:\n\n1 - Select the the part of the code you want to change, for example '40px'.\n\n2 - Type Ctrl+Shift+E (Cmd+Shift+E for Mac users), and that is it.\n\n![ScreenShot1] (https://github.com/guzzgm/px-to-rem/blob/master/images/ScreenShot1.png)\n![ScreenShot2] (https://github.com/guzzgm/px-to-rem/blob/master/images/ScreenShot2.png)\n![ScreenShot3] (https://github.com/guzzgm/px-to-rem/blob/master/images/ScreenShot3.png)\n\n3 - By default, the convert base size is 16. But You can change it under the package settings.\n\n![ScreenShot4] (https://github.com/guzzgm/px-to-rem/blob/master/images/ScreenShot4.png)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/gmendonca/px-to-rem/issues"
+  },
+  "homepage": "https://github.com/gmendonca/px-to-rem#readme",
+  "_id": "px-to-rem@0.5.6",
+  "_shasum": "7de674458200f7f41d150f9d8e8bdff7c9c89461",
+  "_resolved": "file:../d-115113-24216-10ozpf2/package.tgz",
+  "_from": "../d-115113-24216-10ozpf2/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/px-to-rem.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

@@ -1,0 +1,26 @@
+@import 'package-variables';
+@import 'ui-variables';
+
+atom-text-editor::shadow {
+  .gutter-shadow {
+    bottom: -20px;
+    left: 0;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    transition: all 100ms ease;
+    z-index: 1;
+
+    &.active, &.always-on {
+      box-shadow: inset 0 0 @gutter-shadow-size @gutter-shadow-color;
+    }
+
+    &.active.bigger-shadow {
+      box-shadow: inset 0 0 @gutter-bigger-shadow-size @gutter-bigger-shadow-color;
+    }
+  }
+
+  .gutter-shadow-left-padding {
+    padding-left: 3px;
+  }
+}

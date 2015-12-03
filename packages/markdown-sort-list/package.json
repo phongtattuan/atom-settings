@@ -1,0 +1,72 @@
+{
+  "name": "markdown-sort-list",
+  "main": "./lib/markdown-sort-list",
+  "version": "0.2.0",
+  "description": "Sorts a tree of markdown unordered lists alphabetically.",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": [
+      "markdown-sort-list:convert"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harangue/atom-markdown-sort-list.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "marked": "^0.3.5"
+  },
+  "readme": "# markdown-sort-list package\n\nSorts a tree of markdown unordered lists alphabetically.\n\n![A screenshot of your package](https://raw.githubusercontent.com/harangue/atom-markdown-sort-list/master/markdown-sort-list.gif)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/harangue/atom-markdown-sort-list/issues"
+  },
+  "homepage": "https://github.com/harangue/atom-markdown-sort-list#readme",
+  "_id": "markdown-sort-list@0.2.0",
+  "_shasum": "986dbafa3102980b7b14240c971e5a38b31fafee",
+  "_resolved": "file:../d-115113-30323-1wfcpv8/package.tgz",
+  "_from": "../d-115113-30323-1wfcpv8/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "marked",
+        "version": "0.3.5",
+        "path": "node_modules/marked/lib/marked.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/markdown-sort-list.coffee"
+      ],
+      ".js": [
+        "node_modules/marked/Gulpfile.js",
+        "node_modules/marked/index.js",
+        "node_modules/marked/lib/marked.js",
+        "node_modules/marked/marked.min.js"
+      ],
+      ".json": [
+        "node_modules/marked/bower.json",
+        "node_modules/marked/component.json",
+        "node_modules/marked/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "",
+          "spec"
+        ],
+        "dependencies": {
+          "marked": "^0.3.5"
+        }
+      }
+    ]
+  }
+}

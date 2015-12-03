@@ -1,0 +1,44 @@
+{
+  "name": "drop-up",
+  "main": "./lib/drop-up",
+  "version": "0.4.0",
+  "description": "Drag and drop image files to editor, upload and insert link, GitHub style.",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sikhapol/drop-up.git"
+  },
+  "author": {
+    "name": "Sikhaol Saijit",
+    "email": "sikhapol@gmail.com",
+    "url": "http://sikhapol.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "# Drop Up package\n\nDrag and drop image files to editor, upload and insert link, GitHub style.\n\n![screenshot.gif](http://i.imgur.com/4Gm7kYW.gif)\n\n## Installation\n```\napm install drop-up\n```\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/sikhapol/drop-up/issues"
+  },
+  "homepage": "https://github.com/sikhapol/drop-up#readme",
+  "_id": "drop-up@0.4.0",
+  "_shasum": "a3d2f4ca1fc6eb136d97ad6ef54a62d6a68acb5b",
+  "_resolved": "file:../d-115113-26411-nd1oac/package.tgz",
+  "_from": "../d-115113-26411-nd1oac/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/drop-up.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

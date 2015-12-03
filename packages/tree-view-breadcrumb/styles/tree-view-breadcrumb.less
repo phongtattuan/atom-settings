@@ -1,0 +1,121 @@
+@import "ui-variables";
+
+tree-view-breadcrumb {
+  display: flex;
+  order: -1;
+  overflow-x: auto;
+  z-index: 2;
+  height: auto;
+  padding-bottom: 10px;
+
+  &.bottom {
+    order: 1;
+  }
+
+  &.thin {
+    padding: 0;
+  }
+
+  &.thin::-webkit-scrollbar {
+    height: 1px;
+  }
+
+  &.thin::-webkit-scrollbar-thumb {
+    background-color: @text-color-subtle;
+  }
+
+  &.thin::-webkit-scrollbar-track {
+    background-color: @background-color-highlight;
+  }
+
+  .btn-group {
+    white-space: nowrap;
+
+    .btn {
+      float: none;
+
+      &::before {
+        vertical-align: middle;
+      }
+
+      span {
+        padding-left: 0.4em;
+        line-height: 1em;
+      }
+
+      &.root::before {
+        content: "\f001";
+        font-family: 'Octicons Regular';
+        font-weight: normal;
+        font-style: normal;
+        display: inline-block;
+        line-height: 1em;
+        -webkit-font-smoothing: antialiased;
+        text-decoration: none;
+        font-size: 1.45em !important;
+        width: 1em !important;
+        height: 1em !important;
+      }
+    }
+  }
+}
+
+tree-view-breadcrumb.path-style {
+  overflow-y: hidden;
+
+  .tree-view-breadcrumb {
+    background: transparent;
+    .btn-group {
+      background: inherit;
+
+      .btn {
+        transition: all 0.2s;
+
+        // Clear button styles
+        border: none;
+        background: none;
+        border-radius: 0 !important;
+        box-shadow: none;
+
+        // Set button text color
+        color: @text-color;
+
+        // Less padding
+        padding: 0.2em;
+
+        // Extra padding to the first and last items
+        &:first-child {
+          padding-left: 0.5em;
+        }
+
+        &:last-child {
+          padding-right: 1em;
+        }
+
+        // Last button
+        &.btn-primary {
+          color: @text-color-highlight;
+        }
+
+        // Add a '/' before each directory (except the first one)
+        &:not(:first-child):before {
+          color: @text-color;
+          content: '/';
+        }
+
+        // Hover style
+        &:hover {
+          color: @text-color-highlight;
+
+          &:first-child {
+            background: @background-color-highlight;
+          }
+          &:not(:first-child) {
+            background-image: -webkit-linear-gradient(left, transparent 0.6em, @background-color-highlight 0.6em, @background-color-highlight 100%);
+            background-image: linear-gradient(left, transparent 0.6em, @background-color-highlight 0.6em, @background-color-highlight 100%);
+          }
+        }
+      }
+    }
+  }
+}

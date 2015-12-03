@@ -1,0 +1,48 @@
+{
+  "name": "copy-file-contents",
+  "description": "Copy file contents to clipboard right from the tree view's context menu!",
+  "version": "0.3.0",
+  "main": "./lib/copy-file-contents",
+  "activationCommands": {
+    ".tree-view .selected": [
+      "copy-file-contents:copy"
+    ]
+  },
+  "keywords": [
+    "file",
+    "treeview",
+    "copy",
+    "clipboard"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lieko/atom-copy-file-contents.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.50.0"
+  },
+  "readme": "# copy-file-contents package\n\nCopy file contents to clipboard right from the tree view's context menu!\n\n![Screenshot][1]\n\n## Usage\n\nOpen the context menu (**right click**) for any file on the tree view pane and select the `Copy contents` option to copy them to the system clipboard.\n\n## OS Support\n\nCurrent version supports **Windows**, **OS X** and **Linux** platforms!\n\n#### Linux\n\nThe plugin relies on the [**xclip**][2] command in order to interact with the system clipboard. This package is usually shipped with most Linux distributions, so please make sure you have it installed in case the plugin isn't working.\n\n## Roadmap\n\nPlanned features for future releases:\n* Keybindings support\n* \"Copy contents\" option on application menu\n* \"Copy contents\" option on editor's context menu\n* Proper support for copying image files\n\n[1]: https://raw.githubusercontent.com/lieko/atom-copy-file-contents/master/doc/screenshot.png\n[2]: http://sourceforge.net/projects/xclip\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lieko/atom-copy-file-contents/issues"
+  },
+  "homepage": "https://github.com/lieko/atom-copy-file-contents#readme",
+  "_id": "copy-file-contents@0.3.0",
+  "_shasum": "3461d41421c5990bbe6941ad4a169499ae6e3447",
+  "_resolved": "file:../d-115113-2008-1qy4afv/package.tgz",
+  "_from": "../d-115113-2008-1qy4afv/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/copy-file-contents.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

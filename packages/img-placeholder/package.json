@@ -1,0 +1,44 @@
+{
+  "name": "img-placeholder",
+  "main": "./lib/img-placeholder",
+  "version": "2.0.1",
+  "description": "Insert an img tag from placehold.it image into your code.",
+  "activationCommands": {
+    "atom-workspace": [
+      "img-placeholder:insert"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxxcrawford/img-placeholder.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "# img-placeholder Atom Package\n\nA simple [placehold.it](http://placehold.it/) image plug-in for Atom. It allows you to quickly insert an `<img>` tag into a project. \n\nAfter installing the package, simply hit the key command:\n\n`ctrl-cmd-p`\n\n---\n\n### Feature Improvements\n\n+ Add Ratio, Size and Text Options\n\n<!-- ![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif) -->\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/maxxcrawford/img-placeholder/issues"
+  },
+  "homepage": "https://github.com/maxxcrawford/img-placeholder#readme",
+  "_id": "img-placeholder@2.0.1",
+  "_shasum": "25a0edb201ac1c801d5f02c40a0d73e05f13c089",
+  "_resolved": "file:../d-115113-4538-1sui5pu/package.tgz",
+  "_from": "../d-115113-4538-1sui5pu/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/img-placeholder-view.coffee",
+        "lib/img-placeholder.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

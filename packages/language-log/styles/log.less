@@ -1,0 +1,19 @@
+@import 'ui-variables';
+
+atom-text-editor::shadow .log, .log-view .input-block {
+  .log-error, .log-failed {
+    color: @text-color-error;
+  }
+  .log-warning, .log-denied {
+    color: @text-color-warning;
+  }
+  .log-debug, .log-success {
+    color: @text-color-success;
+  }
+  .log-info, .log-patch {
+    color: @text-color-info;
+  }
+  .log-verbose {
+    color: @text-color-highlight;
+  }
+}

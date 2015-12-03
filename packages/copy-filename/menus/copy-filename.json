@@ -1,0 +1,44 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Copy Filename",
+          "submenu": [
+            {
+              "label": "Copy filename of open file",
+              "command": "copy-filename:copy-open-file-filename"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "context-menu": {
+    ".tree-view.full-menu .file": [
+      {
+        "label": "Copy filename",
+        "command": "copy-filename:copy-tree-view-name"
+      },
+      {
+        "type": "separator"
+      }
+    ],
+    ".tree-view.full-menu .header.list-item": [
+      {
+        "label": "Copy name",
+        "command": "copy-filename:copy-tree-view-name"
+      },
+      {
+        "type": "separator"
+      }
+    ],
+    "atom-pane[data-active-item-path] .item-views": [
+      {
+        "label": "Copy filename",
+        "command": "copy-filename:copy-open-file-filename"
+      }
+    ]
+  }
+}

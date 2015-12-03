@@ -1,0 +1,5 @@
+pt-BR:
+  date:
+    short: {{day}} de {{month}} do ano {{year}}
+  view:
+    title: Lista de coisas

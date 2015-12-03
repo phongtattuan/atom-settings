@@ -1,0 +1,118 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "spell-check"
+      "go-plus"
+      "project-dropdown"
+    ]
+    packagesWithKeymapsDisabled: [
+      "linter"
+      "spell-check"
+    ]
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    fontSize: 10
+  minimap:
+    plugins:
+      bookmarks: true
+      "find-and-replace": true
+      "git-diff": true
+      selection: true
+      "split-diff": true
+      "minimap-hide": true
+  "todo-show":
+    sortBy: "Type"
+    sortAscending: false
+  "go-plus": {}
+  "file-icons":
+    onChanges: true
+    coloured: false
+    tabPaneIcon: false
+  "remote-edit": {}
+  "Remote-FTP":
+    showViewOnStartup: false
+  "atom-terminal": {}
+  "terminal-plus":
+    core: {}
+    style: {}
+  "atom-terminal-panel": {}
+  "terminal-panel": {}
+  "imdone-atom": {}
+  "pdf-view": {}
+  fonts: {}
+  expose: {}
+  "atom-pair": {}
+  "quick-editor": {}
+  "git-log": {}
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+  "comment-commander": {}
+  "tree-view-breadcrumb":
+    keepBreadcrumbVisible: true
+    pathStyle: true
+  linter:
+    showErrorPanel: false
+  pigments:
+    markerType: "dot"
+    mergeColorDuplicates: true
+  "spell-check":
+    grammars: [
+      ".txt"
+    ]
+  autosave:
+    enabled: true
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "rubo-format": {}
+  "linter-rubocop": {}
+  "ruby-test": {}
+  "grunt-runner": {}
+  navigate: {}
+  "atom-beautify":
+    _analyticsUserId: "f6e17f36-4897-46e7-b504-e7580b24f927"
+  "tidy-tabs": {}
+  semanticolor:
+    affectedSourceObjects: {}
+  "git-plus": {}
+  "tree-view-git-status": {}
+  "tab-switcher": {}
+  counter: {}
+  "nav-panel":
+    noDups: false
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "flex-tool-bar": {}
+  Clean2:
+    hoverTabs: true
+    fullScreen: false
+    hideGutter: false
+  "px-to-rem": {}
+  "markdown-assistant":
+    disableImageUploaderIfNotMarkdown: true
+  clock: {}
+  "status-bar-clock":
+    activateOnStart: "Show on start"
+  "glowing-cursor":
+    cursorWidth: 2
+  "one-dark-ui":
+    fontSize: 11
+  "atom-material-ui":
+    ui:
+      slimScrollbar: true
+    tabs:
+      tabSize: "Small"
+      rippleAccentColor: true
+      tabMinWidth: true
+    fonts: {}
+    treeView:
+      compactTreeView: true
+    panels:
+      panelContrast: true

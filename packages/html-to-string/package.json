@@ -1,0 +1,44 @@
+{
+  "name": "html-to-string",
+  "main": "./lib/html-to-string",
+  "version": "0.2.3",
+  "description": "Add string delimiter for multi-line HTML.",
+  "activationCommands": {
+    "atom-workspace": [
+      "htmlToString:convert",
+      "htmlToString:deconvert"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakajmg/atom-html-to-string.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# atom-html-to-string package\n\nAdd string delimiter for multi-line HTML.\n\n![ss](https://raw.githubusercontent.com/nakajmg/atom-html-to-string/master/ss.gif)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/nakajmg/atom-html-to-string/issues"
+  },
+  "homepage": "https://github.com/nakajmg/atom-html-to-string#readme",
+  "_id": "html-to-string@0.2.3",
+  "_shasum": "c84d41bbb0c2bb97f761f97a4473686465d5e762",
+  "_resolved": "file:../d-115112-12398-1hyjir1/package.tgz",
+  "_from": "../d-115112-12398-1hyjir1/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/html-to-string.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
